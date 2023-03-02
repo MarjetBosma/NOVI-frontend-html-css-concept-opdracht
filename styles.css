@@ -19,32 +19,131 @@ Grijs #7A7A7A (voor de service-tegel tekst);*/
     margin: 0;
 }
 
-/* :root {
-    --main-bg-color: (nog in te vullen)
-}
-Oproepen: background-color: var(--main-bg-color)
- */
-
 body {
     font-family: 'Roboto', sans-serif;
 }
-/* ------------------------------- 2. Typography ----------------------------------- */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
 }
 
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
 /*font-family: 'Roboto', sans-serif;
 font-family: 'Merriweather', serif;*/
 
 /* ------------------------------- 3. Layout --------------------------------------- */
+:root {
+    --main-bg-color: #F2F0FF;
+    --header-footer-bg-color: linear-gradient(90deg, rgba(70,69,137,1) 0%, rgba(87,34,205,1) 80%);
+    --main-font-color: #0C0C0C;
+    --header-footer-font-color: #F2F0FF;
+}
 
 /* --------------- 3.1 Reusables ----------------------- */
+
 
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--header-footer-font-color);
+    background: var(--header-footer-bg-color);
+    /*Ik kreeg het kleurverloop niet precies hetzelfde als in het voorbeeld, maar volgens mij komt het toch aardig in de buurt.*/
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    /*border: 2px solid red;*/
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 40px;
+    padding: 20px 40px;
+    list-style-type: none;
+    /*border: 2px solid red;*/
+}
+
+.navbar-items {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+ a {
+     color: inherit;
+     text-decoration: none;
+ }
+
+ a:hover {
+     color: #ED4385;
+     /*Vond ik leuk om toe te voegen*/
+ }
+
+.header-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 600px;
+    padding-bottom: 130px;
+    /*border: 2px solid red;*/
+}
+
+h1 {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.header-paragraph {
+    font-size: 17px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.contact-button {
+    padding: 13px 20px;
+    border-radius: 50px;
+    font-size: 8px;
+    font-weight: 400;
+    color: #F2F0FF;
+    text-transform: uppercase;
+    background-color: #ED4385;
+    border: solid #ED4385;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    /*Het is lastig om de schaduw exact na te maken, maar volgens mij komt dit behoorlijk in de buurt*/
+}
+
+.image-wrapper {
+    margin-bottom:-20px;
+}
+
+#image-squiggle-line-stripe {
+    color: #F2F0FF;
+    width: 50px;
+}
+
+
 
 /* --------------- 4.2 Introduction ------------------- */
 
