@@ -33,19 +33,22 @@ h1 {
     font-size: 28px;
     font-weight: 600;
 }
-/*font-family: 'Roboto', sans-serif;
-font-family: 'Merriweather', serif;*/
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 :root {
-    --main-bg-color: #F2F0FF;
-    --header-footer-bg-color: linear-gradient(90deg, rgba(70,69,137,1) 0%, rgba(87,34,205,1) 80%);
+    --intro-services-bg-color: white;
+    --projects-bg-color: #F2F0FF;
+    --header-contactform-bg-color: linear-gradient(90deg, rgba(70,69,137,1) 0%, rgba(87,34,205,1) 80%);
     --main-font-color: #0C0C0C;
-    --header-footer-font-color: #F2F0FF;
+    --header-contactform-font-color: white;
 }
 
 /* --------------- 3.1 Reusables ----------------------- */
-
 
 /* --------------- 3.2 Other --------------------------- */
 
@@ -59,8 +62,8 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: var(--header-footer-font-color);
-    background: var(--header-footer-bg-color);
+    color: var(--header-contactform-font-color);
+    background: var(--header-contactform-bg-color);
     /*Ik kreeg het kleurverloop niet precies hetzelfde als in het voorbeeld, maar volgens mij komt het toch aardig in de buurt.*/
 }
 
@@ -136,15 +139,42 @@ h1 {
 
 .image-wrapper {
     margin-bottom:-20px;
+    /*Niet de fraaiste manier, maar het werkt. Ik heb ook position properties geprobeerd, maar toen gebeurden er hele rare dingen... :-)*/
 }
 
 #image-squiggle-line-stripe {
     color: #F2F0FF;
     width: 50px;
+    /*Anders was het plaatje in verhouding te groot*/
 }
 
-
-
 /* --------------- 4.2 Introduction ------------------- */
+.introduction {
+    padding: 50px 200px;
+    background-color: var(--intro-services-bg-color);
+}
+
+.intro-text {
+    text-align: center;
+    color: #5722CD;
+    padding-top: 20px;
+}
+
+#question {
+    text-align: center;
+    color: #0C0C0C;
+    font-size: 12px;
+    padding-top: 70px;
+    padding-bottom: 25px;
+}
+
+#contact-link {
+    color: #5722CD;
+}
+
+#contact-link:hover {
+    color: #ED4385;
+    /*Vond ik leuk om toe te voegen*/
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
