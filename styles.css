@@ -108,7 +108,7 @@ nav {
     justify-items: center;
     align-items: center;
     width: 600px;
-    padding-bottom: 130px;
+    padding-bottom: 100px;
     /*border: 2px solid red;*/
 }
 
@@ -125,7 +125,7 @@ h1 {
 }
 
 .contact-button {
-    padding: 13px 20px;
+    padding: 15px 20px;
     border-radius: 50px;
     font-size: 8px;
     font-weight: 400;
@@ -137,15 +137,12 @@ h1 {
     /*Het is lastig om de schaduw exact na te maken, maar volgens mij komt dit behoorlijk in de buurt*/
 }
 
-.image-wrapper {
-    margin-bottom:-20px;
-    /*Niet de fraaiste manier, maar het werkt. Ik heb ook position properties geprobeerd, maar toen gebeurden er hele rare dingen... :-)*/
-}
-
 #image-squiggle-line-stripe {
     color: #F2F0FF;
     width: 50px;
     /*Anders was het plaatje in verhouding te groot*/
+    margin-bottom: -15px;
+    /*Zo valt een deel van het streepje buiten het vak, en klopt de lengte ervan. Het is niet de meest fraaie manier, maar het werkt. Ik heb position properties geprobeerd, maar toen gebeurden er hele rare dingen... :-)*/
 }
 
 /* --------------- 4.2 Introduction ------------------- */
