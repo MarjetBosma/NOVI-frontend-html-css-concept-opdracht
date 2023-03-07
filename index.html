@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
     <title>Title</title>
 </head>
 <body>
@@ -18,23 +20,92 @@
             <li class="navbar-items"><a href="#contact">Contact us</a></li>
         </ul>
     </nav>
-    <div class="header-text-container">
-        <h1>Your website is an investment in the success of your business</h1>
-        <p class=header-paragraph>We are here to help you succeed.</p>
-        <button type="submit" class="contact-button">Let's work together</button>
+    <div class="outer-container-header-text">
+        <div class="header-text-container inner-container-header-text">
+            <h1>Your website is an investment in the success of your business</h1>
+            <p class=header-paragraph>We are here to help you succeed.</p>
+            <button type="submit" class="contact-button">Let's work together</button>
+        </div>
     </div>
     <img src="assets/squiggle_line_stripe.svg" id="image-squiggle-line-stripe" alt="squiggle line and vertical stripe">
+    <!--In de les werd genoemd dat het in dit geval netter is om d afbeelding als background-image te coderen, maar dit lukte me helaas niet.-->
 </header>
-    <main>
-        <div class="introduction">
+
+<main>
+    <section class="outer-container-introduction">
+        <div class="inner-container-introduction">
             <h3 class="intro-text">Rekupe is a digital agency in Los Angeles.<h3/>
-            <h3 class="intro-text">We use strategic UX, SEO optimization and beautiful visual designs to help your business grow.</h3>
-            <h3 class="intro-text">We see every project as a fresh opportunity, pushing ourselves to create new digital experiences.</h3>
-            <p id="question">Have a question? <a id="contact-link" href="#contact">Click here<a/> to contact us!</p>
+                <h3 class="intro-text">We use strategic UX, SEO optimization and beautiful visual designs to help your
+                    business grow.</h3>
+                <h3 class="intro-text">We see every project as a fresh opportunity, pushing ourselves to create new
+                    digital experiences.</h3>
+                <p id="question">Have a question? <a id="contact-link" href="#contact">Click here<a/> to contact us!</p>
         </div>
-        <div class="projects">
+    </section>
+    <section class="projects">
+        <article>
+            <div>
+                <h4>Rolling Stone</h4>
+                <img src="assets/squiggle_line.svg">
+                <p>You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global icon.</p>
+            </div>
+            <span class="image-wrapper">
+                <img src="assets/work-image-01.jpeg" alt="Rolling Stone website on laptop and magazine">
+                </span>
+        </article>
+        <div>
+                <h4>Variety</h4>
+                <img src="assets/squiggle_line.svg">
+                <p>Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content dating back to 1905.</p>
+        </div>
+        <span>
+            <img class="images-projects" src="assets/work-image-02.jpeg" alt="Variety magazine and website on a laptop">
+            </span>
+        <article>
+            <div>
+                <h4>Worth</h4>
+                <img src="assets/squiggle_line.svg">
+                <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
+            </div>
+            <span>
+                <img class="images-projects" src="assets/work-image-03.jpeg" alt="Variety magazine and website on a tablet">
+                <!--Waarom staat er een afbeelding van Variety bij de tekst over Worth?-->
+            </span>
+        </article>
+        <article>
+
+        </article>
+    </section>
+    <section class="services">
+        <div>
+            <article>
+
+            </article>
+            <article>
+
+            </article>
+            <article>
+
+            </article>
+            <article>
+
+            </article>
+            <article>
+
+            </article>
+            <article>
+
+            </article>
 
         </div>
-    </main>
+    </section>
+</main>
+<footer>
+    <div class="contact-form">
+        <!--titel, p, form-->
+    </div>
+    <div class="copyright">
+        <!--<p>Business website opdracht &#169; NOVI Hogeschool 2022</p>-->
+</footer>
 </body>
 </html>

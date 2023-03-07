@@ -48,11 +48,13 @@ h3 {
     --header-contactform-font-color: white;
 }
 
+
 /* --------------- 3.1 Reusables ----------------------- */
 
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
+
 
 /* --------------- 4.1 Header ------------------------- */
 
@@ -72,7 +74,6 @@ nav {
     flex-direction: row;
     justify-content: flex-end;
     width: 100%;
-    /*border: 2px solid red;*/
 }
 
 .navbar {
@@ -82,7 +83,6 @@ nav {
     gap: 40px;
     padding: 20px 40px;
     list-style-type: none;
-    /*border: 2px solid red;*/
 }
 
 .navbar-items {
@@ -90,7 +90,6 @@ nav {
     font-size: 12px;
     font-weight: 300;
 }
-
 
  a {
      color: inherit;
@@ -102,14 +101,24 @@ nav {
      /*Vond ik leuk om toe te voegen*/
  }
 
-.header-text-container {
+
+.outer-container-header-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.inner-container-header-text {
+    flex-basis: 500px;
+    margin-inline: 20px;
     display: flex;
     flex-direction: column;
+    flex-shrink: 1;
+    flex-grow: 0;
     justify-items: center;
     align-items: center;
-    width: 600px;
     padding-bottom: 100px;
-    /*border: 2px solid red;*/
 }
 
 h1 {
@@ -128,13 +137,22 @@ h1 {
     padding: 15px 20px;
     border-radius: 50px;
     font-size: 8px;
-    font-weight: 400;
+    font-weight: 600;
     color: #F2F0FF;
     text-transform: uppercase;
     background-color: #ED4385;
     border: solid #ED4385;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     /*Het is lastig om de schaduw exact na te maken, maar volgens mij komt dit behoorlijk in de buurt*/
+}
+
+.contact-button:hover {
+    /*Vond ik leuk om toe te voegen*/
+    color: #ED4385;
+    background-color: white;
+    border-color: white;
+    /*op een of andere manier blijft er standaard steeds een rand rond de button in de oorspronkelijke kleur als je er overheen hovert, maar zo kon ik dat oplossen.*/
+    font-weight: 600;
 }
 
 #image-squiggle-line-stripe {
@@ -146,9 +164,25 @@ h1 {
 }
 
 /* --------------- 4.2 Introduction ------------------- */
-.introduction {
-    padding: 50px 200px;
+
+.outer-container-introduction {
     background-color: var(--intro-services-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.inner-container-introduction {
+    flex-basis: 500px;
+    margin-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-grow: 0;
+    justify-items: center;
+    align-items: center;
+    padding-block: 50px;
 }
 
 .intro-text {
@@ -173,5 +207,19 @@ h1 {
     color: #ED4385;
     /*Vond ik leuk om toe te voegen*/
 }
+
+/* --------------- 4.3 Projects ------------------- */
+
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.images-projects {
+    width: 100%;
+}
+
+
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
